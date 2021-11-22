@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulaire d'inscription au concours de chant</title>
+
+  <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+</head>
+
+<body>
+    <center><h1>Bienvenue sur le site d'inscription au concours de chant de Longuenesse</h1></center>
+<div id="container">
+  
+    <!-- 
+    Les balises <form> servent à dire que c'est un formulaire
+    on lui demande de faire fonctionner la page inscription.php une fois le bouton "S'inscrire" cliqué
+    on lui dit également que c'est un formulaire de type "POST"
+     
+    Les balises <input> sont les champs de formulaire
+    type="text" sera du texte
+    type="password" sera des petits points noir (texte caché)
+    type="submit" sera un bouton pour valider le formulaire
+    name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, pour le code PHP
+     -->
+    <br />
+    <form method="post" action="connexBDD.php" enctype="multipart/form-data" class="DBForm">
+        <h1>Formulaire d'inscription</h1>
+        Adresse mail : <input type="text" name="mail" placeholder="Tapez votre adresse mail" class="input">
+        <br />
+        Pseudo (Caractères minuscules et chiffres uniquement) : <input type="text" name="pseudo" placeholder="Tapez votre pseudo" class="input">
+        <br />
+        Mot de passe : <input type="password" name="mdp" placeholder="Tapez votre mdp" class="input">
+        <br />
+        Titre du morceau souhaité : <input type="text" name="titre" placeholder="Titre du morceau" class="input">
+        <br />
+        <input type="hidden" name="MAX_FILE_SIZE" value="8388608" />
+        Insérez votre morceau (8 mo max) : <input type="file" name="fileToUpload" id="fileToUpload" accept=".mp3" class="input" />
+        <br />
+        <input type="submit" name="submit" value="S'inscrire" class="input">
+        <a href="accueil.html">
+            <input type="button" name="return" value="Retour à l'accueil" class="input">
+        </a>
+        
+    </form>
+</div>
+</body>
+</html>
