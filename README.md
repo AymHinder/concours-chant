@@ -1,5 +1,5 @@
 # concours-chant
-GRETA TP DWWM - Brief concours de chant de Longuenesse -- état au 22/11
+GRETA TP DWWM - Brief concours de chant de Longuenesse -- état au 22/11/21
 ATTENTION : pas forcément optimisé et fonctionnel à 100%
 
 Site concours de chant
